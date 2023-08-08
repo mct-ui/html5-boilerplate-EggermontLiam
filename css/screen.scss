@@ -35,13 +35,13 @@
 // ---
 
 
-// $color-blue: #1abaff;
-$color-blue: #ef9606;
+$color-blue: #1abaff;
+// $color-blue: #ef9606;
 $color-blue-hue: hue($color-blue);
 $color-blue-saturation: saturation($color-blue);
 
-// $color-teal: #1affba;
-$color-teal: #e10ebe;
+$color-teal: #1affba;
+// $color-teal: #e10ebe;
 $color-teal-hue: hue($color-teal);
 $color-teal-saturation: saturation($color-teal);
 
@@ -217,6 +217,16 @@ h1 {
   font-size: $ms5;
   line-height: calc($baseline * 4);
   margin-bottom: $space-m;
+
+  @include mq(bp1) {
+    font-size: $ms9;
+    line-height: calc($baseline * 6);
+  }
+
+  @include mq(bp2) {
+    font-size: $ms11;
+    line-height: calc($baseline * 8);
+  }
 }
 
 h2 {
